@@ -1,0 +1,99 @@
+/* *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100%;
+    display: grid;
+   place-items: center; 
+}
+.container-img{
+    margin: 80px;
+    width: 100%;
+    height: 60rem;
+    border-radius: 1rem;
+    box-shadow: rgba(100,100, 111, 0.2)0px 7px 29px 0px;
+    background-image: url(Ch/f893e1e2d94442d8e1a4ccf24ccba171.jpg);
+    background-size: cover;
+    animation: gallery 10s linear infinite;
+    -webkit-animation: gallery 10s linear infinite;
+}
+ @keyframes gallery {
+    0%{
+        background-image: url('flowers/red.png');
+    }
+    20%{
+        background-image: url('flowers/pink.png');
+    }
+    40%{
+        background-image: url('flowers/yellow.png');
+    }
+    60%{
+        background-image: url('flowers/white.png');
+    }
+    80%{
+        background-image: url('flowers/purple.png');
+    }
+    100%{
+        background-image: url('flowers/orange.png');
+    }
+
+ } */
+ * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100%;
+    display: grid;
+    place-items: center;
+}
+
+.container-img {
+    margin: 80px;
+    width: 100%;
+    height: 60rem;
+    border-radius: 1rem;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    background-image: url('Ch/f893e1e2d94442d8e1a4ccf24ccba171.jpg');
+    background-size: cover;
+    background-position: center;
+    transition: background-image 3s ease-in-out, opacity 1s ease-in-out;
+    opacity: 1;
+    animation: gallery 15s linear infinite;
+    -webkit-animation: gallery 15s linear infinite;
+    -webkit-transition: background-image 3s ease, opacity 1s ease-in-out;
+    -moz-transition: background-image 3s ease-in-out, opacity 1s ease-in-out;
+    -ms-transition: background-image 3s ease-in-out, opacity 1s ease-in-out;
+    -o-transition: background-image 3s ease-in-out, opacity 1s ease-in-out;
+}
+
+@keyframes gallery {
+    0% {
+        opacity: 1;
+        background-image: url('flowers/red.png');
+    }
+    20% {
+        opacity: 1;
+        background-image: url('flowers/pink.png');
+    }
+    40% {
+        opacity: 1;
+        background-image: url('flowers/yellow.png');
+    }
+    60% {
+        opacity: 1;
+        background-image: url('flowers/white.png');
+    }
+    80% {
+        opacity: 1;
+        background-image: url('flowers/purple.png');
+    }
+    100% {
+        opacity: 1;
+        background-image: url('flowers/orange.png');
+    }
+}
